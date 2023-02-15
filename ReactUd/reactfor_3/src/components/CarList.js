@@ -25,7 +25,7 @@ const CarList = () => {
         <p>
           {car.name}:- ₹{car.cost}
         </p>
-        <button className="button is-danger" onClick={handleCarDelete}>
+        <button className="button is-danger" onClick={() => handleCarDelete(car)}>
           Delete
         </button>
       </div>
